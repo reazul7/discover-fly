@@ -117,7 +117,7 @@
                     </div>
                 </div>
             </div>
-            <button onclick="popUp()" class="btn-style">Book Now</button>
+            <button onclick="alertBtn()" class="btn-style" >Book Now</button>
         </div>
 
         <div class="booking-content">
@@ -177,15 +177,11 @@
                 return productCount;
             }
 
+            //alert button
+            function alertBtn() {
+                let ifEmpty = document.getElementById('total');
+                alert("Congratulation! You buy " + firstClassCount.value + " First class ticket and " + economyCount.value + " Economy Ticket");
 
-            //Book Now button alert box
-            function popUp() {
-                swal({
-                    title: "Congratulations!",
-                    text: "You bought " + firstClassCount.value + " First Class ticket and " + economyCount.value + " Economy Ticket.",
-                    icon: "success",
-                    button: "OK",
-                });
             }
         </script>
         <!--Thank You-->
